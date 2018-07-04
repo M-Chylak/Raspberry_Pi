@@ -1,0 +1,171 @@
+*** cat /proc/pcuinfo - CPU information:
+
+
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: BCM2835
+Revision	: a02082
+Serial		: 00000000089963c4
+
+
+*** cat /proc/partitions - Partition block allocation information:
+
+
+major minor  #blocks  name
+
+   1        0       4096 ram0
+   1        1       4096 ram1
+   1        2       4096 ram2
+   1        3       4096 ram3
+   1        4       4096 ram4
+   1        5       4096 ram5
+   1        6       4096 ram6
+   1        7       4096 ram7
+   1        8       4096 ram8
+   1        9       4096 ram9
+   1       10       4096 ram10
+   1       11       4096 ram11
+   1       12       4096 ram12
+   1       13       4096 ram13
+   1       14       4096 ram14
+   1       15       4096 ram15
+ 179        0   15558144 mmcblk0
+ 179        1      44236 mmcblk0p1
+ 179        2   15508992 mmcblk0p2
+
+
+*** cat /proc/version - Linux version:
+
+
+Linux version 4.14.50-v7+ (dc4@dc4-XPS13-9333) (gcc version 4.9.3 (crosstool-NG crosstool-ng-1.22.0-88-g8460611)) #1122 SMP Tue Jun 19 12:26:26 BST 2018
+
+
+*** cat /etc/os-release - Operating system identification data:
+
+
+PRETTY_NAME="Raspbian GNU/Linux 9 (stretch)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="9"
+VERSION="9 (stretch)"
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+
+
+*** more /etc/resolv.conf - Server information:
+
+
+domain eu.tieto.com
+nameserver 192.168.0.1
+nameserver 192.168.42.129
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+
+*** netstat -rn - Network and Internet connections:
+
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         192.168.42.129  0.0.0.0         UG        0 0          0 usb0
+0.0.0.0         192.168.0.1     0.0.0.0         UG        0 0          0 eth0
+0.0.0.0         192.168.42.129  0.0.0.0         UG        0 0          0 usb0
+0.0.0.0         192.168.116.1   0.0.0.0         UG        0 0          0 wlan0
+192.168.0.0     0.0.0.0         255.255.255.0   U         0 0          0 eth0
+192.168.42.0    0.0.0.0         255.255.255.0   U         0 0          0 usb0
+192.168.116.0   0.0.0.0         255.255.254.0   U         0 0          0 wlan0
+
+
+*** df -h - Disk space information in human-readible format:
+
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        15G  1.5G   13G  11% /
+devtmpfs        460M     0  460M   0% /dev
+tmpfs           464M     0  464M   0% /dev/shm
+tmpfs           464M   13M  452M   3% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           464M     0  464M   0% /sys/fs/cgroup
+/dev/mmcblk0p1   43M   22M   21M  51% /boot
+tmpfs            93M     0   93M   0% /run/user/1000
+
+
+*** ifconfig - Network interface configuration:
+
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.4  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::e9fa:dec0:d64a:a3d6  prefixlen 64  scopeid 0x20<link>
+        ether b8:27:eb:99:63:c4  txqueuelen 1000  (Ethernet)
+        RX packets 2994  bytes 263346 (257.1 KiB)
+        RX errors 0  dropped 2  overruns 0  frame 0
+        TX packets 3024  bytes 290858 (284.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+usb0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.42.95  netmask 255.255.255.0  broadcast 192.168.42.255
+        inet6 fe80::3f23:3d1b:3df4:46ea  prefixlen 64  scopeid 0x20<link>
+        ether 66:02:a4:29:b4:98  txqueuelen 1000  (Ethernet)
+        RX packets 8789  bytes 12358287 (11.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4596  bytes 512405 (500.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.116.63  netmask 255.255.254.0  broadcast 192.168.117.255
+        inet6 fe80::5123:745:ebd6:2fc2  prefixlen 64  scopeid 0x20<link>
+        ether b8:27:eb:cc:36:91  txqueuelen 1000  (Ethernet)
+        RX packets 56  bytes 13549 (13.2 KiB)
+        RX errors 0  dropped 5  overruns 0  frame 0
+        TX packets 471  bytes 77156 (75.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
