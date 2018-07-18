@@ -1,2 +1,13 @@
-lista komponentow
+Additional software components used :
+
+App name: gpio - wiringPi
+Version: 2.46
+Functionality: GPIO testing
+
+App name: git
+Version: 2.11.0 
+Functionality: GitHub commits
+
+App name: lshw
+Functionality: Getting hardware information
 

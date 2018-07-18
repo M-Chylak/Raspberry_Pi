@@ -116,7 +116,7 @@ Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
 192.168.116.0   0.0.0.0         255.255.254.0   U         0 0          0 wlan0
 
 
-*** df -h - Disk space information in human-readible format:
+*** df -h - Disk space information in human-readable format:
 
 
 Filesystem      Size  Used Avail Use% Mounted on
@@ -168,4 +168,8 @@ wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         RX errors 0  dropped 5  overruns 0  frame 0
         TX packets 471  bytes 77156 (75.3 KiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+
+
 
