@@ -1,6 +1,6 @@
 #!/bin/bash
-NETWORK_ID=${1:"Tieto Any Device"}
-WIRELESS_KEY=$:"3aIM:DX6j:4KqD"}
+NETWORK_ID=${1:"WifiName"}
+WIRELESS_KEY=$:"xxxxxxxxxxxxxx"}
 WIRELESS_DEVICE=${3:wlan0}
 
 if [ -z "$WIRELESS_KEY ]; then
